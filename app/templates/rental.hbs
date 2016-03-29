@@ -1,0 +1,11 @@
+<!--THIS IS A TEMPLATE. IT IS RENDERED BY THE RENTAL.JS ROUTE!!!-->
+{{outlet}}
+
+<h2>More information about {{model.owner}}'s {{model.type}}</h2>
+
+{{update-rental rental=model update="update"}}
+
+{{rental-detail rental=model destroyRental="destroyRental"}}
+<!--these are actions, passed up from the component(s). Passing through the
+template on their way to the route handler. Safe travels, you silly little actions!
+-->
